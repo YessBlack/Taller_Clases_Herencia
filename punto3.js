@@ -1,6 +1,6 @@
 // 3. Usuarios Nequi
 
-class UsurioNequi {
+class UsuarioNequi {
   constructor(nombre, saldo) {
     this.nombre = nombre
     this.saldo = saldo
@@ -17,7 +17,7 @@ class UsurioNequi {
   }
 }
 
-class ComercioNequi extends UsurioNequi {
+class ComercioNequi extends UsuarioNequi {
   constructor(nombre, saldo, comision) {
     super(nombre, saldo)
     this.comision = comision
@@ -31,7 +31,7 @@ class ComercioNequi extends UsurioNequi {
   }
 }
 
-const usuarioNequi1 = new UsurioNequi('Angelica Garcia', 500000)
+const usuarioNequi1 = new UsuarioNequi('Angelica Garcia', 500000)
 console.log(usuarioNequi1.enviarMonto(200000))
 console.log(usuarioNequi1.enviarMonto(700000))
 

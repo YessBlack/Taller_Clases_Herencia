@@ -4,11 +4,11 @@ class Pelicula {
   constructor(titulo, duracion) {
     this.titulo = titulo
     this.duracion = duracion
-    this.precioBoleta = 15000
+    this.precioBase = 15000
   }
 
   getPrecioBoleta() {
-    return this.precioBoleta
+    return this.precioBase
   }
 
   ficha() {
@@ -23,7 +23,7 @@ class PeliculaVIP extends Pelicula {
   }
 
   getPrecioBoleta() {
-    const precioFinal = this.precioBoleta + 25000
+    const precioFinal = this.precioBase + 25000
     return this.incluyeComida ? precioFinal + 18000 : precioFinal
   }
 }
